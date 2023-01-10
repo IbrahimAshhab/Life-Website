@@ -37,9 +37,12 @@ html, body {
 }
 
 .fp-images{
-    display: flex;
-    flex-direction: column;
     width: 500px;
     height: 200px;
+}
+
+.images-fp-container {
+    display: flex;
+    flex-direction: row;
     align-items: center;
 }

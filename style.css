@@ -2,28 +2,44 @@ html, body {
     font-family: 'Arial';
 }
 
-h1 {
-    color: blue;
+.navbar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 150px;
+    padding-right: 150px;
 }
 
-.center-text {
-    text-align: center;
+.nav-link {
+    text-decoration: none;
 }
 
-#phew {
-    color: red;
-    text-align: center;
+.logo {
+    width: 200px;
+    height: 120px;
+}
+
+.nav-link {
+    color: green;
     font-weight: bold;
+    font-size: .7cm;
 }
 
-h4 {
-    text-decoration: solid;
-    text-decoration: wavy;
-    text-decoration: underline;
-    color: orange;
+#opening-text {
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 100px;
+    text-align: center;
+    color: rgb(39, 87, 39);
+    font-size: large;
 }
 
-#pic {
-    width: 300px;
-    border: 10px solid purple;
+.fp-images{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 200px;
+    align-items: center;
 }

@@ -1,0 +1,29 @@
+html, body {
+    font-family: 'Arial';
+}
+
+h1 {
+    color: blue;
+}
+
+.center-text {
+    text-align: center;
+}
+
+#phew {
+    color: red;
+    text-align: center;
+    font-weight: bold;
+}
+
+h4 {
+    text-decoration: solid;
+    text-decoration: wavy;
+    text-decoration: underline;
+    color: orange;
+}
+
+#pic {
+    width: 300px;
+    border: 10px solid purple;
+}

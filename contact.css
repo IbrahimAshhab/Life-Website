@@ -1,0 +1,21 @@
+#contact-text {
+    font-size: xx-large;
+    color: green;
+    text-align: center;
+    font-weight: bolder;
+}
+
+#contact-photo {
+    width: 100vw;
+    height: auto;
+}
+
+#contact-container {
+    color: green;
+    text-align: left;
+}
+
+#contact-title {
+    font-weight: bold;
+    font-size: large;
+}

@@ -1,5 +1,6 @@
-html, body {
-    font-family: 'Arial';
+html,
+body {
+    font-family: "Arial";
 }
 
 .navbar {
@@ -8,8 +9,8 @@ html, body {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    padding-left: 5vw;
-    padding-right: 5vw;
+    padding-left: 150px;
+    padding-right: 150px;
     border-bottom: 2px solid green;
     margin-bottom: 1cm;
 }
@@ -27,8 +28,7 @@ html, body {
     text-decoration: none;
     color: green;
     font-weight: bold;
-    font-size: .7cm;
-    text-align: center;
+    font-size: 0.7cm;
 }
 
 .nav-link:hover {
@@ -45,7 +45,7 @@ html, body {
     line-height: 1.5cm;
 }
 
-.fp-images{
+.fp-images {
     width: 500px;
     height: 200px;
 }

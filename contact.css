@@ -12,10 +12,19 @@
 
 #contact-container {
     color: green;
-    text-align: left;
+    text-align: center;
 }
 
 #contact-title {
     font-weight: bold;
     font-size: large;
+}
+
+.contact-link {
+    text-decoration: none;
+    color: green;
+}
+
+.contact-link :hover {
+    text-decoration: solid;
 }

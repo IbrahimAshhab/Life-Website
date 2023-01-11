@@ -8,8 +8,8 @@ html, body {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    padding-left: 150px;
-    padding-right: 150px;
+    padding-left: 5vw;
+    padding-right: 5vw;
     border-bottom: 2px solid green;
     margin-bottom: 1cm;
 }
@@ -28,6 +28,7 @@ html, body {
     color: green;
     font-weight: bold;
     font-size: .7cm;
+    text-align: center;
 }
 
 .nav-link:hover {

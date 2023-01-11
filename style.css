@@ -79,3 +79,58 @@ html, body {
     font-weight: bold;
     opacity: 50%;
 }
+
+.about-title {
+    font-size: xx-large;
+    color: rgb(0, 0, 0);
+    text-align: left;
+    font-weight: bolder;
+    margin-right: 50px;
+}
+
+.about-text {
+    line-height: 1cm;
+    align-items: left;
+    color: darkgreen;
+    font-weight: 700;
+}
+
+.box-container-left {
+    display: flex;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-left: 3px solid green;
+    margin-bottom: 7.5%;
+}
+
+.box-container-right {
+    display: flex;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-right: 3px solid green;
+    margin-bottom: 7.5%;
+}
+
+
+.text-container {
+    width: 25%
+}
+
+.photo-container {
+    padding-left: 5%;
+    width: 50%;
+}
+
+.about-photo {
+    display: block;
+    margin: auto;
+}
+
+#zoom-photo {
+    width: 650px;
+    height: 400px;
+}

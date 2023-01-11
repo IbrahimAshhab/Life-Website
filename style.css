@@ -98,7 +98,6 @@ html, body {
 
 .box-container-left {
     display: flex;
-    padding-left: 5%;
     padding-right: 5%;
     margin-left: 10%;
     margin-right: 10%;
@@ -108,7 +107,6 @@ html, body {
 
 .box-container-right {
     display: flex;
-    padding-left: 5%;
     padding-right: 5%;
     margin-left: 10%;
     margin-right: 10%;
@@ -116,22 +114,21 @@ html, body {
     margin-bottom: 7.5%;
 }
 
-
 .text-container {
-    width: 25%
+    width: 60%;
+    padding-left: 5%;
 }
 
 .photo-container {
     padding-left: 5%;
-    width: 50%;
+    width: 40%;
+    display: grid;
+    align-items: center;
 }
 
-.about-photo {
+.photo-container > img {
+    width: 100%;
+    height: auto;
     display: block;
     margin: auto;
-}
-
-#zoom-photo {
-    width: 650px;
-    height: 400px;
 }

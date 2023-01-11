@@ -18,6 +18,8 @@ body {
 .logo {
     width: 200px;
     height: 120px;
+    transition: transform .25s linear;
+    -webkit-transition: transform .25s;
 }
 
 .logo:hover {
@@ -30,12 +32,22 @@ body {
     font-weight: bold;
     font-size: 0.7cm;
     text-align: center;
+    transition: transform .25s linear;
+    -webkit-transition: transform .25s;
 }
 
 .nav-link:hover {
-    transform: scale(2);
+    /* transform: scale(1.5); */
+    transform: scale(1.25);
 }
 
+.nav-link:active {
+    transform: scale(1.5);
+}
+
+.active-nav-link {
+    text-decoration: underline;
+}
 #opening-text {
     padding-left: 20%;
     padding-right: 20%;

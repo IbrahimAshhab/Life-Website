@@ -133,3 +133,16 @@ body {
     display: block;
     margin: auto;
 }
+
+
+#contact-text {
+    font-size: xx-large;
+    color: green;
+    text-align: center;
+    font-weight: bolder;
+}
+
+#contact-photo {
+    width: 100vw;
+    height: auto;
+}

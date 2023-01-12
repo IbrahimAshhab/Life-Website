@@ -65,6 +65,8 @@
     margin-bottom: 5px;
     text-align: left;
     cursor: pointer;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .submitted-text {

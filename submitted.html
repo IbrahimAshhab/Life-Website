@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>LIFE - Submitted!</title>
+    <link rel="stylesheet" type="text/css" href="style.css"><link>
+    <link rel="stylesheet" type="text/css" href="contact.css"><link>
+    <link rel="stylesheet" type="text/css" href="scrollbar.css"><link>
+</head>
+
+<body>
+
+    <div class = "navbar">
+        <a href="services.html" target="_self" class="nav-link"> Services </a>
+        <a href="blog.html" target="_self" class="nav-link"> Blog </a>
+        <a href="index.html" target="_self"> <img class = "logo" src="images/logo.jpg" alt="LIFE logo"/></a>
+        <a href="about-us.html" target="_self" class="nav-link"> About us </a>
+        <a href="contact-us.html" target="_self" class="nav-link"> Contact us </a>
+    </div>
+
+    <div class="submitted-text"><p>Thank you <span id="name1"></span> for contacting us.</p>
+    <script> document.getElementById("name1").innerHTML=localStorage.getItem("nameVal")</script>
+    <p> We will get back to you at <span id="email1"></span> within 5 business days about the following:</p>
+    <script> document.getElementById("email1").innerHTML=localStorage.getItem("emailVal")</script>
+    <p><span id="subject1"></span></p>
+    <script> document.getElementById("subject1").innerHTML=localStorage.getItem("subjectVal")</script>
+    <p> <span id="message1"></span></p>
+    <script> document.getElementById("message1").innerHTML=localStorage.getItem("messageVal")</script>
+    </div>
+
+    <div class="footer">
+        <img class="foot-logo" src="images/logo.jpg" alt="LIFE logo"/>
+        <p class="copyright-statement"> Copyright &copy; 2023 Living It Fully Everyday, Inc</p>
+        <div class="foot-links">
+        <a href="about-us.html" target="_self" class="foot-link"> About us </a>
+        <a href="contact-us.html" target="_self" class="foot-link"> Contact us </a>
+        </div>
+    </div>
+
+</body>
+
+</html>

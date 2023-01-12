@@ -7,6 +7,24 @@
         <link rel="stylesheet" type="text/css" href="style.css"><link>
         <link rel="stylesheet" type="text/css" href="contact.css"><link>
         <link rel="stylesheet" type="text/css" href="scrollbar.css"><link>
+
+        <script>
+            function passInfo() {
+                var name = document.getElementById("name"),value;
+                localStorage.setItem("nameVal", name.value)
+
+                var name = document.getElementById("email"),value;
+                localStorage.setItem("emailVal", email.value)
+
+                var name = document.getElementById("subject"),value;
+                localStorage.setItem("subjectVal", subject.value)
+
+                var name = document.getElementById("message"),value;
+                localStorage.setItem("messageVal", message.value)
+
+                return false
+            }
+        </script>
     </head>
 
 
@@ -38,11 +56,21 @@
                   fill="currentColor"
                 />
               </svg>    <a class="contact-link" href=mailto:living.fully@life.com?subject="HTML link">living.fully@life.com</a></p>
-              <p><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M16.2721 10.2721C16.2721 12.4813 14.4813 14.2721 12.2721 14.2721C10.063 14.2721 8.27214 12.4813 8.27214 10.2721C8.27214 8.06298 10.063 6.27212 12.2721 6.27212C14.4813 6.27212 16.2721 8.06298 16.2721 10.2721ZM14.2721 10.2721C14.2721 11.3767 13.3767 12.2721 12.2721 12.2721C11.1676 12.2721 10.2721 11.3767 10.2721 10.2721C10.2721 9.16755 11.1676 8.27212 12.2721 8.27212C13.3767 8.27212 14.2721 9.16755 14.2721 10.2721Z" fill="currentColor" /><path fill-rule="evenodd" clip-rule="evenodd" d="M5.79417 16.5183C2.19424 13.0909 2.05438 7.39409 5.48178 3.79417C8.90918 0.194243 14.6059 0.054383 18.2059 3.48178C21.8058 6.90918 21.9457 12.6059 18.5183 16.2059L12.3124 22.7241L5.79417 16.5183ZM17.0698 14.8268L12.243 19.8965L7.17324 15.0698C4.3733 12.404 4.26452 7.97318 6.93028 5.17324C9.59603 2.3733 14.0268 2.26452 16.8268 4.93028C19.6267 7.59603 19.7355 12.0268 17.0698 14.8268Z" fill="currentColor" /></svg> <a class="contact-link" href="https://www.google.com/maps/place/192+Exhibition+St,+Melbourne+VIC+3000/@-37.8118325,144.9705794,18z/data=!4m5!3m4!1s0x6ad642c8c6fef73f:0x9b48642ebac45083!8m2!3d-37.8112893!4d144.970472">192 Exhibition St, Melbourne VIC 3000</a></p>
+              <p><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M16.2721 10.2721C16.2721 12.4813 14.4813 14.2721 12.2721 14.2721C10.063 14.2721 8.27214 12.4813 8.27214 10.2721C8.27214 8.06298 10.063 6.27212 12.2721 6.27212C14.4813 6.27212 16.2721 8.06298 16.2721 10.2721ZM14.2721 10.2721C14.2721 11.3767 13.3767 12.2721 12.2721 12.2721C11.1676 12.2721 10.2721 11.3767 10.2721 10.2721C10.2721 9.16755 11.1676 8.27212 12.2721 8.27212C13.3767 8.27212 14.2721 9.16755 14.2721 10.2721Z" fill="currentColor" /><path fill-rule="evenodd" clip-rule="evenodd" d="M5.79417 16.5183C2.19424 13.0909 2.05438 7.39409 5.48178 3.79417C8.90918 0.194243 14.6059 0.054383 18.2059 3.48178C21.8058 6.90918 21.9457 12.6059 18.5183 16.2059L12.3124 22.7241L5.79417 16.5183ZM17.0698 14.8268L12.243 19.8965L7.17324 15.0698C4.3733 12.404 4.26452 7.97318 6.93028 5.17324C9.59603 2.3733 14.0268 2.26452 16.8268 4.93028C19.6267 7.59603 19.7355 12.0268 17.0698 14.8268Z" fill="currentColor" /></svg> <a class="contact-link" target="_blank" href="https://www.google.com/maps/place/192+Exhibition+St,+Melbourne+VIC+3000/@-37.8118325,144.9705794,18z/data=!4m5!3m4!1s0x6ad642c8c6fef73f:0x9b48642ebac45083!8m2!3d-37.8112893!4d144.970472">192 Exhibition St, Melbourne VIC 3000</a></p>
             </div>
-            <div></div>
-
         </div>
+        
+
+            <div class="contact-box-container">
+                <form action="submitted.html">
+                    <input type="text" class="regular-field" placeholder="Your Name" id="name">
+                    <input type="text" class="regular-field" placeholder="Your Email" id="email">
+                    <input type="text" class="regular-field" placeholder="Subject" id="subject">
+                    <textarea type="text" class="regular-field message-field" placeholder="Your Message" id="message"></textarea>
+                    <button type="submit" id="btn" value="Click" onclick="passInfo()">Submit</button>
+                </form>
+            </div>
+
 
         <div class="footer">
             <img class="foot-logo" src="images/logo.jpg" alt="LIFE logo"/>

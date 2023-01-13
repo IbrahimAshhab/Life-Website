@@ -25,12 +25,12 @@
 
     <div class="info-box-container">
         <form action="submitted.html">
-            <input type="text" class="regular-field" placeholder="First Name" id="name">
-            <input type="text" class="regular-field" placeholder="Last Name" id="name">
-            <input type="email" class="regular-field" placeholder="Email Address" id="email">
-            <input type="email" class="regular-field" placeholder="Confirm Email" id="email">
-            <input type="tel" class="regular-field" placeholder="Phone Number" id="number">
-            <input type="dropdown" class="regular-field" placeholder="Birth Year" id="birth-year">
+            <label class="form-label">First Name <input type="text" class="regular-field" placeholder="First Name" id="name"></label><br>
+            <label class="form-label">Last Name <input type="text" class="regular-field" placeholder="Last Name" id="name"></label><br>
+            <label class="form-label">Email Address <input type="email" class="regular-field" placeholder="Email Address" id="email"></label><br>
+            <label class="form-label">Confirm Email <input type="email" class="regular-field" placeholder="Confirm Email" id="email"></label><br>
+            <label class="form-label">Phone Number <input type="tel" class="regular-field" placeholder="Phone Number" id="number"></label><br>
+            <label class="form-label">Birth Year <input type="dropdown" class="regular-field" placeholder="Birth Year" id="birth-year"></label><br>
 
             <div class="radio-container">
                 <div class="radio-box">
@@ -51,7 +51,7 @@
                     <label for="other" class="radio-text">Other</label><br>
                 </div>
             </div>
-            <input type="password" class="regular-field" placeholder="Password" id="password">
+            <label class="form-label">Password <input type="password" class="regular-field" placeholder="Password" id="password"></label><br>
             <button type="submit" class="btn" value="Click" onclick="passInfo()">Register</button>
         </form>
     </div>

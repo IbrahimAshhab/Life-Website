@@ -38,10 +38,12 @@
     transform: translate(60%, 3%);
     text-align: center;
     border-radius: 7.5%;
+    color: green;
+
 }
 
 .regular-field {
-    width: 80%;
+    width: 65%;
     height: 40px;
     margin-top: 3%;
     padding-left: 5%;

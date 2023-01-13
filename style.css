@@ -145,3 +145,44 @@ body {
     display: block;
     margin: auto;
 }
+
+#register-title {
+    color: green;
+    font-weight: bolder;
+    font-size: 200%;
+    text-align: center;
+}
+
+.radio-container {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-evenly;
+    padding-left: 5%;
+    padding-right: 5%;
+    flex-wrap: wrap;
+}
+
+.radio-box {
+    text-align: left;
+    margin-top: 3%;
+}
+
+.radio-field {
+    margin-top: 3%;
+    padding-left: 5%;
+    padding-right: 5%;
+    border: 1px solid green;
+    border-radius: 15px;
+    outline: none;
+}
+
+.radio-title {
+    color: green;
+    font-size: large;
+}
+
+.radio-text {
+    color: green;
+    font-size: medium;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+    
+<head>
+
+    <title>LIFE - Register</title>
+    <link rel="stylesheet" type="text/css" href="style.css"><link>
+    <link rel="stylesheet" type="text/css" href="contact.css"><link>
+    <link rel="stylesheet" type="text/css" href="scrollbar.css"><link>
+
+</head>
+
+<body>
+
+    <div class = "navbar">
+        <a href="services.html" target="_self" class="nav-link"> Services </a>
+        <a href="blog.html" target="_self" class="nav-link"> Blog </a>
+        <a href="index.html" target="_self"> <img class = "logo" src="images/logo.jpg" alt="LIFE logo"/></a>
+        <a href="about-us.html" target="_self" class="nav-link"> About us </a>
+        <a href="contact-us.html" target="_self" class="nav-link"> Contact us </a>
+    </div>
+
+    <p id="register-title">Register Now!</p>
+
+    <div class="info-box-container">
+        <form action="submitted.html">
+            <input type="text" class="regular-field" placeholder="First Name" id="name">
+            <input type="text" class="regular-field" placeholder="Last Name" id="name">
+            <input type="email" class="regular-field" placeholder="Email Address" id="email">
+            <input type="email" class="regular-field" placeholder="Confirm Email" id="email">
+            <input type="tel" class="regular-field" placeholder="Phone Number" id="number">
+            <input type="dropdown" class="regular-field" placeholder="Birth Year" id="birth-year">
+
+            <div class="radio-container">
+                <div class="radio-box">
+                    <p class="radio-title">Student Status:</p>
+                    <input type="radio" class="radio-field" id="studying" name="student-Status" value="studying">
+                    <label for="studying" class="radio-text">Studying</label><br>
+                    <input type="radio" class="radio-field" id="not-studying" name="student-Status" value="not-studying">
+                    <label for="not-studying" class="radio-text">Not Studying</label><br>
+                </div>
+
+                <div class="radio-box">
+                    <p class="radio-title">Employment Status:</p>
+                    <input type="radio" class="radio-field" id="employed" name="employment-status" value="employed">
+                    <label for="employed" class="radio-text">Employed</label><br>
+                    <input type="radio" class="radio-field" id="seeking-employment" name="employment-status" value="seeking-employment">
+                    <label for="seeking-employment" class="radio-text">Seeking Employment</label><br>
+                    <input type="radio" class="radio-field" id="other" name="employment-status" value="other">
+                    <label for="other" class="radio-text">Other</label><br>
+                </div>
+            </div>
+            <input type="password" class="regular-field" placeholder="Password" id="password">
+            <button type="submit" class="btn" value="Click" onclick="passInfo()">Register</button>
+        </form>
+    </div>
+
+
+    <div class="footer">
+        <img class="foot-logo" src="images/logo.jpg" alt="LIFE logo"/>
+        <p class="copyright-statement"> Copyright &copy; 2023 Living It Fully Everyday, Inc</p>
+        <div class="foot-links">
+        <a href="about-us.html" target="_self" class="foot-link"> About us </a>
+        <a href="contact-us.html" target="_self" class="foot-link"> Contact us </a>
+        </div>
+    </div>
+
+</body>
+
+</html>

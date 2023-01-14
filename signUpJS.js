@@ -13,6 +13,12 @@ var employmentStatus = document.getElementById("seeking-employment");
 var employmentStatus = document.getElementById("other");
 var error = document.getElementById("error");
 
+
+function passName() {
+    var fName = document.getElementById("first-name"), value;
+    localStorage.setItem("firstName", fName.value)
+}
+
 const select = document.getElementById("birth-year");
 for (let year = 2023; year > 1912; year--) {
     let newOption = new Option(year, year);
@@ -103,5 +109,7 @@ form.addEventListener("submit", (e) => {
         e.preventDefault();
         error.innerText = messages.join(", ");
     }
+
+    passName()
 });
 // }

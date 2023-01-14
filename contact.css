@@ -86,6 +86,12 @@
     font-size: large;
 }
 
+#FirstName-1 {
+    font-weight: bolder;
+    color: darkgreen;
+    font-size: large;
+}
+
 #email1 {
     color: darkgreen;
     font-weight: bolder;

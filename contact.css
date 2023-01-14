@@ -99,3 +99,35 @@
     text-decoration: solid;
     text-decoration: underline;
 }
+
+#error {
+    text-align: center;
+    font-weight: bold;    
+    color: red;
+}
+
+#signUpform {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+    width: 90%;
+    margin-top: 3%;
+}
+
+.inputContainer > label {
+    align-self: center;
+}
+
+.inputContainer > input {
+    align-self: center;
+}

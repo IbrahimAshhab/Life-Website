@@ -3,6 +3,23 @@ body {
     font-family: "Arial";
 }
 
+.navigation {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    border-bottom: 2px solid green;
+    margin-bottom: 1cm;
+}
+
+.logo-container{
+    width: 10%;
+}
+
+
 .navbar {
     display: flex;
     flex-direction: row;
@@ -11,8 +28,7 @@ body {
     align-items: center;
     padding-left: 5vw;
     padding-right: 5vw;
-    border-bottom: 2px solid green;
-    margin-bottom: 1cm;
+    width: 90%;
 }
 
 .logo {
@@ -37,7 +53,6 @@ body {
 }
 
 .nav-link:hover {
-    /* transform: scale(1.5); */
     transform: scale(1.25);
 }
 

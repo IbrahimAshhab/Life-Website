@@ -63,6 +63,21 @@ body {
 .active-nav-link {
     text-decoration: underline;
 }
+
+.video-container{
+    height: auto;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+.video-container > video{
+    width: 35%;
+    height: auto;
+    align-self: center;
+    display: flex;
+}
+
 #opening-text {
     padding-left: 20%;
     padding-right: 20%;
@@ -71,17 +86,6 @@ body {
     color: rgb(39, 87, 39);
     font-size: large;
     line-height: 1.5cm;
-}
-
-.fp-images {
-    width: 500px;
-    height: 200px;
-}
-
-.images-fp-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
 }
 
 .footer {

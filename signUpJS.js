@@ -79,6 +79,8 @@ form.addEventListener("submit", (e) => {
         phoneNumber.value.charAt(0) !== "+" ||
         phoneNumber.value.charAt(2) !== "1" ||
         phoneNumber.value.charAt(1) !== "6" ||
+        phoneNumber.value.charAt(3) !== "4" ||
+        phoneNumber.value.length !== 12 ||
         !/^\d+$/.test(phoneNumber.value.substr(5, 11))
     ) {
         messages.push(

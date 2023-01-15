@@ -1,0 +1,143 @@
+.planner-box-container {
+    width: 80%;
+    margin-left: 10%;
+    padding-left: 5%;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+#meal-form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.inputContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+    justify-content: space-around;
+    width: 90%;
+    margin-top: 3%;
+}
+
+.inputContainer>label {
+    align-self: center;
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.inputContainer>input {
+    align-self: center;
+    grid-row: 1;
+    grid-column: 2;
+}
+
+#category option::before {
+    font-family: "Font Awesome 5 Free";
+    content: attr(class);
+    font-weight: 900;
+    margin-right: 8px;
+}
+
+#category option {
+    font-size: 1rem;
+    color: #000;
+}
+
+#meal-plans {
+    width: 100%;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.meal-container {
+    background: #d4c9fa;
+    width: 60%;
+    margin: 10px;
+    border-radius: 20px;
+    padding: 15px 40px;
+    display: grid;
+}
+
+.meal-main-type {
+    font-size: large;
+    font-weight: bold;
+}
+
+.meal-type {
+    font-size: large;
+}
+
+.meal-calories {
+    font-size: x-small;
+}
+
+.meal {
+    background-color: #f0f0f0;
+    height: 50px;
+    margin: 10px 10px;
+    padding: 0px 30px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.veg-meal {
+    background: #a9ffc9;
+}
+
+.non-veg-meal {
+    background: #ffb6b6;
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.button-container button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+}
+
+.button-container button:hover {
+    background-color: #3e8e41;
+}
+
+
+
+
+
+/* Screens with width lower than 700px */
+@media screen and (max-width: 700px) {
+    .meal-type {
+        font-size: small;
+    }
+
+    .meal {
+        height: 100px;
+    }
+
+    .meal-container {
+        width: 100%;
+        margin: 10px;
+        border-radius: 20px;
+        padding: 15px 10px;
+    }
+}

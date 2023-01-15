@@ -10,6 +10,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="scrollbar.css">
+    <link rel="stylesheet" type="text/css" href="mealPlanner.css">
     <link>
 </head>
 
@@ -43,6 +44,47 @@
 
 
 
+    <div class="planner-box-container">
+        <form id="meal-form">
+            <div class="inputContainer">
+                <label for="calorie-counter">Calorie counter:</label>
+                <input type="number" value=2000 step=50 id="calorie-counter" name="calorie-counter" required><br><br>
+            </div><br>
+
+            <div class="inputContainer">
+                <label for="meal-counter">Meal count:</label>
+                <input type="range" min="1" max="10" value="4" id="meal-counter" name="meal-counter">
+                <!-- <input type="number" value=4 id="meal-counter" name="meal-counter"> -->
+                <br><br>
+            </div><br>
+
+            <div class="inputContainer">
+                <label for="category">Category:</label>
+                <select id="category" name="category" multiple required>
+                    <option value="Breakfast" selected>Breakfast</option>
+                    <option value="Lunch">Lunch</option>
+                    <option value="Dinner">Dinner</option>
+                    <option value="Snack">Snack</option>
+                </select><br><br>
+            </div><br>
+
+            <div class="inputContainer">
+                <label for="diet">Food Diet:</label>
+                <select id="diet" name="diet" multiple required>
+                    <option value="Vegetarian" selected>Vegetarian</option>
+                    <option value="Meat-based">Meat-based</option>
+                </select><br><br>
+            </div><br>
+            <div class="button-container">
+                <button type="submit" id="submit-btn" value="Get Meal Plan">Get Meal Plan</button>
+            </div>
+
+        </form>
+        <div id="meal-plans">
+        </div>
+    </div>
+
+
     <footer class="footer">
         <img class="foot-logo" src="images/logo.jpg" alt="LIFE logo" />
         <p class="copyright-statement"> Copyright &copy; 2023 Living It Fully Everyday, Inc</p>
@@ -52,6 +94,7 @@
         </div>
     </footer>
     <script type="text/javascript" src="menu.js"></script>
+    <script type="text/javascript" src="mealPlanner.js"></script>
 </body>
 
 

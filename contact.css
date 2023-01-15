@@ -147,20 +147,47 @@
 }
 
 .inputContainer {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     align-content: center;
     justify-content: space-around;
     width: 90%;
     margin-top: 3%;
 }
 
-.inputContainer > label {
+.inputContainer>label {
     align-self: center;
+    grid-row: 1;
+    grid-column: 1;
 }
 
-.inputContainer > input {
+.inputContainer>input {
     align-self: center;
+    grid-row: 1;
+    grid-column: 2;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.button-container button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    display: inline-block;
+    font-size: large;
+    margin: 5px;
+}
+
+.button-container button:hover {
+    background-color: #3e8e41;
 }
 
 

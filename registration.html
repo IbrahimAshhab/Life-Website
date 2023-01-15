@@ -105,9 +105,16 @@
                 <input type="password" class="regular-field" placeholder="Password" id="passwordEntry" required>
             </div><br>
 
-            <label>Show Password</label><input type="checkbox" onclick="togglePassword()"><br>
-            <button type="submit" class="btn">Register</button><br>
-            <div id="error"></div>
+            <div class="inputContainer">
+                <label>Show Password</label><input type="checkbox" onclick="togglePassword()"><br>
+            </div>
+            <div class="button-container">
+                <button type="submit" class="btn">Register</button><br>
+            </div>
+
+            <div class="error-box">
+                <div id="error"></div>
+            </div>
         </form>
     </div>
 

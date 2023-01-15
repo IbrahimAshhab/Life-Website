@@ -203,9 +203,16 @@ body {
 }
 
 .radio-box {
+    padding-left: 10%;
+    width: 40%;
     text-align: left;
     margin-top: 3%;
-    width: 50%;
+}
+
+.error-box {
+    padding: 10px 5%;
+    width: 95%;
+    text-align: center;
 }
 
 .radio-field {

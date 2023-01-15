@@ -90,7 +90,7 @@ body {
 }
 
 .service-video-container > video{
-    width: 50%;
+    width: 65%;
     height: auto;
     align-self: center;
     display: flex;
@@ -284,6 +284,7 @@ body {
 
     #hamburger {
         display: block;
+        padding-left: 20px;
     }
 
     /* Queries for Services page */

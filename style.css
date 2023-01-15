@@ -76,6 +76,25 @@ body {
     height: auto;
     align-self: center;
     display: flex;
+    border: 5px solid green;
+    box-shadow: 0 0 20px 0 green;
+}
+
+.service-video-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+.service-video-container > video{
+    width: 50%;
+    height: auto;
+    align-self: center;
+    display: flex;
+    border: 5px solid green;
+    box-shadow: 0 0 20px 0 green;
 }
 
 #opening-text {
@@ -113,15 +132,14 @@ body {
     opacity: 50%;
 }
 
-.about-title {
-    font-size: xx-large;
-    color: rgb(0, 0, 0);
+.about-title, .service-title {
+    color: black;
     text-align: left;
     font-weight: bolder;
     margin-right: 50px;
 }
 
-.about-text {
+.about-text, .service-text {
     line-height: 1cm;
     align-items: left;
     color: darkgreen;

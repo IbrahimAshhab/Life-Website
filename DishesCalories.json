@@ -1,0 +1,122 @@
+{
+    "Breakfast": {
+        "Vegetarian": [
+            {
+                "name": "Spinach and feta omelette",
+                "calories": 200
+            },
+            {
+                "name": "Greek yogurt with berries and honey",
+                "calories": 150
+            },
+            {
+                "name": "Avocado toast",
+                "calories": 200
+            }
+        ],
+        "Meat-based": [
+            {
+                "name": "Bacon and egg sandwich",
+                "calories": 400
+            },
+            {
+                "name": "Sausage and egg breakfast burrito",
+                "calories": 500
+            },
+            {
+                "name": "Ham and cheese frittata",
+                "calories": 300
+            }
+        ]
+    },
+    "Lunch": {
+        "Vegetarian": [
+            {
+                "name": "Caesar salad",
+                "calories": 300
+            },
+            {
+                "name": "Grilled cheese sandwich",
+                "calories": 300
+            },
+            {
+                "name": "Quinoa and black bean salad",
+                "calories": 250
+            }
+        ],
+        "Meat-based": [
+            {
+                "name": "Grilled chicken breast",
+                "calories": 200
+            },
+            {
+                "name": "Turkey and cheese sandwich",
+                "calories": 350
+            },
+            {
+                "name": "Grilled shrimp and vegetable skewers",
+                "calories": 200
+            }
+        ]
+    },
+    "Dinner": {
+        "Vegetarian": [
+            {
+                "name": "Tofu stir fry",
+                "calories": 200
+            },
+            {
+                "name": "Vegetable lasagna",
+                "calories": 350
+            },
+            {
+                "name": "Black bean soup",
+                "calories": 150
+            }
+        ],
+        "Meat-based": [
+            {
+                "name": "Spaghetti Bolognese",
+                "calories": 400
+            },
+            {
+                "name": "Grilled salmon",
+                "calories": 250
+            },
+            {
+                "name": "Beef and broccoli stir fry",
+                "calories": 400
+            }
+        ]
+    },
+    "Snack": {
+        "Vegetarian": [
+            {
+                "name": "Hummus and veggies",
+                "calories": 150
+            },
+            {
+                "name": "Apple slices with peanut butter",
+                "calories": 200
+            },
+            {
+                "name": "Popcorn",
+                "calories": 100
+            }
+        ],
+        "Meat-based": [
+            {
+                "name": "Sushi roll",
+                "calories": 250
+            },
+            {
+                "name": "BBQ pulled pork sandwich",
+                "calories": 500
+            },
+            {
+                "name": "Deviled eggs",
+                "calories": 100
+            }
+        ]
+    }
+}

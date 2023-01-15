@@ -21,11 +21,13 @@ function passName() {
 
 const select = document.getElementById("birth-year");
 for (let year = 2023; year > 1912; year--) {
+    // check if the age is in a reasonable range
     let newOption = new Option(year, year);
     select.add(newOption, null);
 }
 
 function togglePassword() {
+    // toggles the password field to show thw password as text
     if (password.type === "password") {
         password.type = "text";
     } else {
@@ -33,13 +35,16 @@ function togglePassword() {
     }
 }
 
-function passwordLengthCheck(pass) {
+function passwordLengthError(pass) {
+    // checks if password length is less than 6 characters
+    // returns true if password length is less than 6
     if (pass.length < 6) {
         return true;
     }
 }
 
-function passwordNumberCheck(pass) {
+function passwordNumberError(pass) {
+    // return true if password doesn't contain any digits
     for (let i = 0; i < pass.length; i++) {
         if (Number.isInteger(parseInt(pass[i]))) {
             return false;
@@ -48,7 +53,8 @@ function passwordNumberCheck(pass) {
     return true;
 }
 
-function passwordLetterCheck(pass) {
+function passwordLetterError(pass) {
+    // return true if password doesn't contain any alphabets
     for (let i = 0; i < pass.length; i++) {
         if (/^[A-Za-z]+$/.test(pass[i])) {
             return false;
@@ -98,11 +104,11 @@ form.addEventListener("submit", (e) => {
         messages.push("Must be over the age of 16 to sign up");
     } else if (password.value === "" || password.value == null) {
         messages.push("Password is required");
-    } else if (passwordLengthCheck(password.value)) {
+    } else if (passwordLengthError(password.value)) {
         messages.push("Password must be a minimum of 6 characters");
-    } else if (passwordLetterCheck(password.value)) {
+    } else if (passwordLetterError(password.value)) {
         messages.push("Password must contain atleast 1 letter");
-    } else if (passwordNumberCheck(password.value)) {
+    } else if (passwordNumberError(password.value)) {
         messages.push("Password must contain atleast 1 number");
     }
     if (messages.length > 0) {

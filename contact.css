@@ -53,14 +53,13 @@
 
 
 .info-box-container {
-    width: 45%;
+    width: 50%;
     box-shadow: 0 0 25px 0 green;
-    top: 50%;
-    left: 50%;
-    transform: translate(60%, 3%);
+    margin-top: 3%;
+    margin-left: 25%;
     text-align: center;
-    border-radius: 7.5%;
     color: green;
+    border-radius: 50px;
 
 }
 
@@ -158,4 +157,22 @@
 
 .inputContainer > input {
     align-self: center;
+}
+
+
+/* Screens with width lower than 900px */
+@media screen and (max-width: 900px) {
+    .info-box-container {
+        width: 76%;
+        margin-top: 3%;
+        margin-left: 12%;
+    }
+}
+
+/* Screens with width lower than 500px */
+@media screen and (max-width: 500px) {
+    .info-box-container {
+        width: 90%;
+        margin-left: 5%;
+    }
 }

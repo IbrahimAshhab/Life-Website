@@ -88,11 +88,11 @@
 
     <div class="info-box-container">
         <form action="submittedContact.html">
-            <input type="text" class="regular-field" placeholder="Your Name" id="name">
-            <input type="text" class="regular-field" placeholder="Your Email" id="email">
-            <input type="text" class="regular-field" placeholder="Subject" id="subject">
+            <input type="text" class="regular-field" placeholder="Your Name" id="name" required>
+            <input type="email" class="regular-field" placeholder="Your Email" id="email" required>
+            <input type="text" class="regular-field" placeholder="Subject" id="subject" required>
             <textarea type="text" class="regular-field message-field" placeholder="Your Message"
-                id="message"></textarea><br>
+                id="message" required></textarea><br>
             <button type="submit" class="btn" value="Click" onclick="passInfo()">Submit</button>
         </form>
     </div>

@@ -3,7 +3,10 @@ let navbar = document.getElementById('navbar');
 hamburger.addEventListener("click", (e) => {
     e.preventDefault();
     if(navbar.style.display == 'none') {
-        navbar.style.display = 'grid';
+        if (hamburger.style.display == 'none'){
+            navbar.style.display = 'flex';
+        }else{
+        navbar.style.display = 'grid';}
     }else {
         navbar.style.display = 'none';
     }

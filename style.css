@@ -85,7 +85,7 @@ body {
     width: 100%;
     height: auto;
     display: flex;
-    align-items: center; 
+    align-items: center;
     justify-content: center;
 }
 
@@ -238,6 +238,20 @@ body {
     display: none;
 }
 
+@media screen and (min-width: 900px) {
+    .navigation {
+        display: flex !important;
+    }
+
+    .navbar {
+        display: flex !important;
+    }
+
+    #hamburger {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 900px) {
     .logo-container {
         width: 40%;
@@ -270,5 +284,3 @@ body {
         display: block;
     }
 }
-
-

@@ -1,3 +1,4 @@
+/* Contact CSS */
 #contact-text {
     font-size: xx-large;
     color: green;
@@ -51,6 +52,7 @@
     text-decoration: solid;
 }
 
+/* Info Box CSS */
 
 .info-box-container {
     width: 50%;
@@ -74,6 +76,7 @@
     outline: none;
 }
 
+/* Message CSS */
 .message-field {
     height: 125px;
     padding-top: 3%;
@@ -92,6 +95,7 @@
     padding-right: 20px;
 }
 
+/* input field CSS */
 .submitted-text {
     font-weight: bold;
     color: green;

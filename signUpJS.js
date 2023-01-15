@@ -66,20 +66,26 @@ function passwordLetterError(pass) {
 form.addEventListener("submit", (e) => {
     let messages = [];
     console.debug(e);
-
+    // do validation check on the form elements
+    // append errors to the message list
+    // submit form if messages is empty
     if (firstName.value === "" || firstName.value == null) {
         messages.push("First Name is required");
     } else if (
         firstName.value.charAt(0) == firstName.value.charAt(0).toLowerCase()
     ) {
+        // first name validation
         messages.push("First Name must start with a capital letter");
     } else if (lastName.value === "" || lastName.value == null) {
+        // last name validation
         messages.push("Last Name is required");
     } else if (
+        // email validation
         !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email.value)
     ) {
         messages.push("Please enter a valid email address");
     } else if (
+        // confirm email validation
         !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(
             emailConfirmation.value
         )
@@ -103,6 +109,7 @@ form.addEventListener("submit", (e) => {
     } else if (2023 - birthYear.value < 16) {
         messages.push("Must be over the age of 16 to sign up");
     } else if (password.value === "" || password.value == null) {
+        // passsword validation
         messages.push("Password is required");
     } else if (passwordLengthError(password.value)) {
         messages.push("Password must be a minimum of 6 characters");

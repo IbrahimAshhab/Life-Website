@@ -14,6 +14,10 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 6px 1px #05623d;
 }
 
 .inputContainer {
@@ -57,14 +61,39 @@
 }
 
 .meal-container {
-    background: #d4c9fa;
+    background: #ffffff;
+    box-shadow: 1px 2px 7px green;
+    /* background: #6C5CE7; */
     width: 60%;
     margin: 10px;
     border-radius: 20px;
     padding: 15px 40px;
     display: grid;
 }
-
+/* .breakfast {
+    background:  #94E08A;
+}
+.lunch {
+    background:  #00B894;
+}
+.dinner {
+    background:  #C9E2C3;
+}
+.snack {
+    background:  #4B6D3F
+} */
+/* #94E08A (light green)
+#4DAF7C (medium green)
+#229954 (dark green)
+#9CCF9E (light mint green)
+#3D8B58 (medium mint green)
+#2B542C (dark mint green)
+#C9E2C3 (light olive green)
+#7AAE73 (medium olive green)
+#4B6D3F (dark olive green)
+#D9EAD3 (light lime green)
+#A2D39C (medium lime green)
+#6DA362 (dark lime green) */
 .meal-main-type {
     font-size: large;
     font-weight: bold;

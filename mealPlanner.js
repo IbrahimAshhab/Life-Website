@@ -70,6 +70,9 @@ submitBtn.addEventListener("click", function (e) {
 
                 let mealPlans = document.getElementById("meal-plans");
                 mealPlans.innerHTML = "";
+                let mealstitle = document.createElement("h1");
+                mealstitle.innerHTML = `Here are some meal plans for you!`;
+                mealPlans.appendChild(mealstitle)
 
                 for (let mealNum = 0; mealNum < mealCount; mealNum++) {
                     let catPos = mealNum % (selectedCategories.length) || 0
@@ -79,6 +82,7 @@ submitBtn.addEventListener("click", function (e) {
                     // Define the container element for the meal plan
                     let mealContainer = document.createElement("div");
                     mealContainer.classList.add("meal-container");
+                    mealContainer.classList.add(catType.toLowerCase());
 
                     // Create the main meal type element
                     let mainMealType = document.createElement("div");
@@ -90,7 +94,7 @@ submitBtn.addEventListener("click", function (e) {
                     // Create the main meal calories element
                     let mainMealCalories = document.createElement("sup");
                     mainMealCalories.classList.add("meal-calories");
-                    mainMealCalories.innerHTML = `${totalCalories} Calories`;
+                    mainMealCalories.innerHTML = `   ${totalCalories} Calories`;
                     mainMealType.appendChild(mainMealCalories);
                     mealContainer.appendChild(mainMealType);
 
@@ -113,7 +117,7 @@ submitBtn.addEventListener("click", function (e) {
                         mealName.appendChild(mealNameText);
                         let mealCalories = document.createElement("sup");
                         mealCalories.classList.add("meal-calories");
-                        mealCalories.innerHTML = `${meal.calories} Calories`;
+                        mealCalories.innerHTML = `   ${meal.calories} Calories`;
                         mealName.appendChild(mealCalories);
                         mealElem.appendChild(mealName);
                         meals.appendChild(mealElem);

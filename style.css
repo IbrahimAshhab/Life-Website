@@ -15,7 +15,7 @@ body {
     margin-bottom: 1cm;
 }
 
-.logo-container{
+.logo-container {
     width: 10%;
 }
 
@@ -43,6 +43,7 @@ body {
 }
 
 .nav-link {
+    float: left;
     text-decoration: none;
     color: green;
     font-weight: bold;
@@ -64,14 +65,14 @@ body {
     text-decoration: underline;
 }
 
-.video-container{
+.video-container {
     height: auto;
     display: flex;
-    align-items: center; 
+    align-items: center;
     justify-content: center;
 }
 
-.video-container > video{
+.video-container>video {
     width: 35%;
     height: auto;
     align-self: center;
@@ -206,4 +207,41 @@ body {
 .radio-text {
     color: green;
     font-size: medium;
+}
+
+#hamburger {
+    display: none;
+}
+
+@media screen and (max-width: 900px) {
+    .logo-container {
+        width: 40%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    .navigation {
+        display: grid;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .nav-link {
+        float: none;
+        font-size: 1rem;
+    }
+
+    .logo {
+        width: 100%;
+        height: auto;
+    }
+
+    #hamburger {
+        display: block;
+    }
 }

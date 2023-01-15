@@ -73,7 +73,7 @@ body {
 }
 
 .video-container>video {
-    width: 35%;
+    width: 70%;
     height: auto;
     align-self: center;
     display: flex;
@@ -237,7 +237,7 @@ body {
 #hamburger {
     display: none;
 }
-
+/* Screens with width greater than 900px */
 @media screen and (min-width: 900px) {
     .navigation {
         display: flex !important;
@@ -252,7 +252,9 @@ body {
     }
 }
 
+/* Screens with width lower than 900px */
 @media screen and (max-width: 900px) {
+    /* Queries for Navbar */
     .logo-container {
         width: 40%;
         align-items: center;
@@ -272,7 +274,7 @@ body {
 
     .nav-link {
         float: none;
-        font-size: 1rem;
+        font-size: 1.5 rem;
     }
 
     .logo {
@@ -283,4 +285,31 @@ body {
     #hamburger {
         display: block;
     }
+
+    /* Queries for Services page */
+    .box-container-left {
+        flex-direction: column-reverse;
+    }
+
+    .box-container-right {
+        flex-direction: column;
+    }
+
+    .text-container {
+        width: 90%;
+    }
+
+    .service-video-container {
+        width: 100%;
+    }
+
+    .service-video-container > video {
+        width: 70%;
+    }
+
+    /* Queries for About us page */
+    .photo-container {
+        width: 80%;
+    }
+
 }

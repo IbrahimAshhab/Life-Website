@@ -6,9 +6,31 @@
 }
 
 #contact-photo {
-    width: 100vw;
+    width: 80vw;
     height: auto;
 }
+
+.contact-photo-container {
+    width: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .navbar {
+    background-color: white;
+    border-radius: 20px;
+}
+
+#background-container {
+    width: 100vw;
+    height: 100vh;
+    background: url("images/meeting.png");
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -100;
+} */
 
 #contact-container {
     color: green;
@@ -108,7 +130,7 @@
 
 #error {
     text-align: center;
-    font-weight: bold;    
+    font-weight: bold;
     color: red;
 }
 
